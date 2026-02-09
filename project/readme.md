@@ -1,13 +1,13 @@
-# Netflix Style Ecommerce Website
+# Walmart Style Ecommerce Website
 
-This is a simple Ecommerce Website designed with a **Netflix dark theme UI**.  
+This is a simple Ecommerce Website designed with a ** walmart dark theme UI**.  
 The project demonstrates basic frontend web development using **HTML, CSS, and JavaScript**.
 
 ---
 
 ## 🚀 Features
 
-- 🎬 Netflix-inspired dark UI design  
+- 🎬 walmart-inspired dark UI design  
 - 🛍️ Product listing with cards  
 - ⭐ Product rating stars  
 - 🛒 Add to Cart functionality using JavaScript  
