@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* Top Offer Bar */
+header > div p {
+  background: #08d7c6;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: black;
+  border-bottom: 1px solid #222;
+}
+
+nav h1 {
+  color: #e50914;
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+/* Category Bar */
+header > ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 10px 40px;
+  background: #111;
+}
+
+header > ul li {
+  cursor: pointer;
+  color: gray;
+}
+
+header > ul li:hover {
+  color: white;
+}
+
+/* Hero Section */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+  background: linear-gradient(to right, black, #141414);
+}
+
+main p {
+  max-width: 500px;
+  font-size: 18px;
+}
+
+main button {
+  padding: 12px 20px;
+  background: #e50914;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+main button:hover {
+  background: white;
+  color: black;
+}
+
+/* Product Section */
+section {
+  padding: 40px;
+}
+
+section h1 {
+  color: #e50914;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #141414;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px red;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card button {
+  width: 100%;
+  background: #e50914;
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: white;
+  color: black;
+}
+
+/* Rating Stars */
+.stars {
+  color: gold;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background: rgb(227, 115, 115);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px white solid 1px;
+}
