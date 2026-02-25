@@ -4,6 +4,8 @@
   "description": "This is a simple Ecommerce Website designed with a ** walmart dark theme UI**.   The project demonstrates basic frontend web development using **HTML, CSS, and JavaScript**.",
   "main": "script.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
