@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Walmart Theme Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-body">
+
+    <!-- Auth Header -->
+    <header class="auth-header">
+        <a href="index.html">
+            <img src="Walmart_logo_(2008).jpg" alt="Walmart Logo" class="auth-logo">
+        </a>
+    </header>
+
+    <!-- Main Auth Content -->
+    <main class="auth-main">
+        <div class="auth-container">
+            <h2>Sign in or create your account</h2>
+            <p class="auth-subtitle">Not sure if you have an account? Enter your email and we'll check.</p>
+
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required autofocus>
+                </div>
+
+                <div class="form-group" style="margin-top: 20px;">
+                    <div class="flex-between">
+                        <label for="password">Password</label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+
+            <div class="auth-divider">
+                <span>or</span>
+            </div>
+
+            <button type="button" class="auth-secondary-btn">Continue as guest</button>
+            <button type="button" class="auth-secondary-btn">Create account</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="auth-footer">
+        <p>© 2026 Walmart. All Rights Reserved.</p>
+        <div class="footer-links-inline">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy & Security</a>
+            <a href="#">CA Privacy Rights</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+
+            // Mock authentication logic
+            if (email === 'admin@walmart.com') {
+                window.location.href = 'admin.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

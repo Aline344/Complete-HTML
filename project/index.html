@@ -3,184 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce website</title>
+    <title>Walmart Theme Clone</title>
     <link rel="stylesheet" href="style.css">
-
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <hr>
-        <div>
-            <p> 70% off for  one if you purchase 2</p>
-        </div>
-        <nav>
-            <div>
-                <img src="Walmart_logo_(2008).jpg" 
-                alt="logo" width="300" >
-            </div>
-            <h1> Walmart</h1>
-            <ul>
-                
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <p>Rollbacks & more! Up to 65% off Flash Deals.</p>
+    </div>
 
-            </ul>
-        </nav>
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <img src="Walmart_logo_(2008).jpg" alt="Walmart Logo" class="logo">
+        </div>
+        
+        <div class="nav-search">
+            <input type="text" placeholder="Search everything at Walmart online and in store">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="nav-actions">
+            <a href="#" class="nav-icon-link">
+                <i class="fa-regular fa-heart"></i>
+                <div>
+                    <span>Reorder</span>
+                    <strong>My Items</strong>
+                </div>
+            </a>
+            <a href="#" class="nav-icon-link">
+                <i class="fa-regular fa-user"></i>
+                <div>
+                    <span>Sign In</span>
+                    <strong>Account</strong>
+                </div>
+            </a>
+            <button class="cart-btn" id="cart-toggle-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-btn-info">
+                    <strong>$<span id="header-cart-total">0.00</span></strong>
+                    <span class="cart-count badge" id="header-cart-count">0</span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Category Menu -->
+    <div class="category-menu">
         <ul>
-            <li><a href="#"></a>Men</li>
-            <li><a href="#"></a>WoMen</li>
-            <li><a href="#"></a>chidren</li>
-            <li><a href="#"></a>sports</li>
-            <li><a href="#"></a>Electronics</li>
-            
+            <li><a href="#" class="departments-btn"><i class="fa-solid fa-grip"></i> Departments</a></li>
+            <li><a href="#"><i class="fa-solid fa-border-all"></i> Services</a></li>
+            <li><a href="#">Grocery & Essentials</a></li>
+            <li><a href="#">Valentine's Day</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Toys</a></li>
         </ul>
-        <main>
-            <img src="giphy.gif" alt="" width="200">
-            <div>
-                <p>✨ Fashion is the 
-                    art you wear — your style tells your story without a single word.
+    </div>
 
-                    💫 Trends fade, but confidence and 
-                   good style never go out of fashion.
-               🔥 Dress like every day is a runway. Your vibe is 
-               your signature.
-              🌟 Fashion isn’t just clothes — it’s an attitude,
-               a lifestyle, a statement.</p>
-                <button>Buy all</button>
-                <input type="search" placeholder="search.....">
-                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-       </main>
-       <hr>
-       <section>
-        <h1> Featured products</h1>
-        <div>
-            <div>
-                <img width="200" src="807293731173ab33949edd1a7c93fa63.webp.jpeg" alt="">               
-                
-                    <p>Lorem, ipsum dolor sit .</p>
-                    <p>200$</p>
-                </div>
-                <div>
-               <img  width="200"  src="Square_Neck_Split_Long_Sleeve_Top_in_Off-White.jpg.webp" alt="">
-                
-                <div>
-                    <p>Lorem, ipsum dolor sit .</p>
-                    <p>200$</p>
-                </div>
-                <div>
-                <img  width="200"  src="Mesh_Ruffle_Green_Maxi_Dress_Back_View.jpg.webp" alt="">
-                
-                <div>
-                    <p>Lorem, ipsum dolor sit .</p>
-                    <p>200$</p>
-                </div>
-                <div>
-                
-                <img  width="200"  src="Mesh_Ruffle_Green_Maxi_Dress_Back_View.jpg.webp" alt="">
-               
-                    <p>Lorem, ipsum dolor sit .</p>
-                    <p>200$</p>
-                </div>
-                <div>
-                
-                <img    width="200"  src="Halter-Neck_A-Line_Dress_In_Light_Gold.webp.jpeg" alt="">
-                <div>
-                    <p>Lorem, ipsum dolor sit .</p>
-                    <p>200$</p>
-                </div>
+    <!-- Hero Section -->
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Save money.<br>Live better.</h1>
+            <p>Shop everyday low prices across apparel, electronics, essentials, and more.</p>
+            <button class="primary-btn">Shop All Departments</button>
+        </div>
+        <div class="hero-image">
+             <img src="giphy.gif" alt="Hero Animation">
+        </div>
+    </main>
 
+    <!-- Featured Products Section -->
+    <section class="products-section">
+        <h2>Flash Deals</h2>
+        <div class="products-grid" id="product-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">Best seller</div>
+                <div class="img-wrapper">
+                    <img src="807293731173ab33949edd1a7c93fa63.webp.jpeg" alt="Stylish Shirt">
+                </div>
+                <div class="product-info">
+                    <p class="product-price"><strong>$24.99</strong></p>
+                    <p class="product-name">Stylish Cotton Shirt for Men</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(124)</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Stylish Cotton Shirt', 24.99)">+ Add</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="Square_Neck_Split_Long_Sleeve_Top_in_Off-White.jpg.webp" alt="White Top">
+                </div>
+                <div class="product-info">
+                    <p class="product-price"><strong>$18.50</strong></p>
+                    <p class="product-name">Square Neck Split Long Sleeve Top</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span>(89)</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Long Sleeve Top', 18.50)">+ Add</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-badge">Rollback</div>
+                <div class="img-wrapper">
+                    <img src="Mesh_Ruffle_Green_Maxi_Dress_Back_View.jpg.webp" alt="Green Dress">
+                </div>
+                <div class="product-info">
+                    <p class="product-price"><strong>$45.00</strong> <span class="old-price">$59.99</span></p>
+                    <p class="product-name">Mesh Ruffle Green Maxi Dress</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span>(302)</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Green Maxi Dress', 45.00)">+ Add</button>
+            </div>
+
+             <!-- Product 4 -->
+             <div class="product-card">
+                 <div class="img-wrapper">
+                    <img src="Halter-Neck_A-Line_Dress_In_Light_Gold.webp.jpeg" alt="Gold Dress">
+                 </div>
+                <div class="product-info">
+                    <p class="product-price"><strong>$39.99</strong></p>
+                    <p class="product-name">Halter-Neck A-Line Dress in Gold</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i>
+                        <span>(45)</span>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('Gold A-Line Dress', 39.99)">+ Add</button>
             </div>
         </div>
-       </section>
-       <hr>
-       <section>
-        <h1>Contact us</h1>
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" placeholder="Enter your name">
-            
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="support-cards">
+            <div class="support-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Free shipping</h3>
+                <p>On orders over $35</p>
+            </div>
+            <div class="support-card">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>Free 90-day returns</h3>
+                <p>Order online, return in store</p>
+            </div>
+            <div class="support-card">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Price Match Guarantee</h3>
+                <p>Find it cheaper? We'll match it</p>
+            </div>
         </div>
-        <div>
-            <label for="Email">Email:</label>
-            <input type="email" placeholder="Enter your email">
+    </section>
+
+    <!-- Contact & Feedback -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>We'd love to hear from you</h2>
+            <form id="contact-form">
+                <div class="form-group row">
+                    <div class="input-col">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-col">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" rows="4" placeholder="How can we improve?"></textarea>
+                </div>
+                <button type="button" class="primary-btn submit-btn">Submit Feedback</button>
+            </form>
         </div>
-        <div>
-            <textarea name="feedback" rows="5" cols="45"> Feedback</textarea>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Returns Policy</a>
+            <a href="#">Product Recalls</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Tax Exempt Program</a>
+            <a href="#">Get the Walmart App</a>
+            <a href="#">Sign-up for Email</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy & Security</a>
+            <a href="#">CA Privacy Rights</a>
         </div>
-        <div>
-            <button type="submit">submit</button>
-        </div>
-       </section>
-       <hr>
-<footer>
-    <ul>
-        <li>
-            <a href="#">Help center</a>
-            
-            
-            
-            
-        </li>
-        <li><a href="#">RETURNS POLICY</a></li>
-        <li><a href="#">OFFERS </a></li>
-        <li><a href="#">coustumer privacy </a></li>
-        <li><a href="#">Track your oder</a></li>
-        <div>
+        <div class="social-links">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-           
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
-        <div> <a href="#"></i><i class="fa-brands fa-youtube"></i></a></div>
-    </ul>
-</footer>
+        <p class="copyright">© 2026 Walmart. All Rights Reserved.</p>
+    </footer>
 
-    </header>
-    <section>
-<h1>Featured Products</h1>
+    <!-- Cart Sidebar (Hidden by default) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart (<span id="sidebar-cart-count">0</span>)</h2>
+            <button class="close-cart" id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items injected by JS -->
+            <div class="loading-cart" id="cart-loading">
+                <i class="fa-solid fa-spinner fa-spin"></i> Loading...
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Estimated total</span>
+                <strong id="cart-total-price">$0.00</strong>
+            </div>
+            <button class="checkout-btn">Continue to checkout</button>
+        </div>
+    </div>
 
-<div class="products">
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Item added to cart!</div>
 
-<div class="product-card">
-<img src="807293731173ab33949edd1a7c93fa63.webp.jpeg">
-<p>Stylish Shirt</p>
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<p>$200</p>
-<button onclick="addToCart('Stylish Shirt',200)">Add to Cart</button>
-</div>
-
-<div class="product-card">
-<img src="Square_Neck_Split_Long_Sleeve_Top_in_Off-White.jpg.webp">
-<p>White Top</p>
-<div class="stars">⭐⭐⭐⭐</div>
-<p>$150</p>
-<button onclick="addToCart('White Top',150)">Add to Cart</button>
-</div>
-
-<div class="product-card">
-<img src="Mesh_Ruffle_Green_Maxi_Dress_Back_View.jpg.webp">
-<p>Green Dress</p>
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<p>$300</p>
-<button onclick="addToCart('Green Dress',300)">Add to Cart</button>
-</div>
-
-</div>
-</section>
-<div class="products">
-
-<div class="product-card">
-  <img src="product1.jpg">
-  <p>Stylish Shirt</p>
-  <div class="stars">⭐⭐⭐⭐⭐</div>
-  <p>$200</p>
-  <button>Add to Cart</button>
-</div>
-
-</div>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
