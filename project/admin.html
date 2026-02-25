@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Walmart Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="admin-body">
+
+    <!-- Top Navigation -->
+    <nav class="admin-top-nav">
+        <div class="nav-brand">
+            <a href="index.html">
+                <img src="Walmart_logo_(2008).jpg" alt="Walmart Logo" class="logo">
+            </a>
+            <span class="admin-badge">Admin Panel</span>
+        </div>
+        <div class="nav-actions">
+            <div class="admin-user-profile">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>admin@walmart.com</span>
+            </div>
+            <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="admin-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="admin-sidebar">
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-box-open"></i> Products</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i> Customers</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> Orders</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="admin-content">
+            <div class="content-header">
+                <h1>Overview</h1>
+                <p>Welcome back, Admin. Here is what's happening today.</p>
+            </div>
+
+            <!-- Metrics Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: rgba(0, 113, 220, 0.1); color: var(--primary-blue);">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>$12,450.00</h3>
+                        <p>Total Revenue</p>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: rgba(43, 122, 11, 0.1); color: #2b7a0b;">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>142</h3>
+                        <p>Orders Today</p>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: rgba(255, 194, 32, 0.2); color: #b38500;">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>8,234</h3>
+                        <p>Active Users</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="admin-panel">
+                <div class="panel-header flex-between">
+                    <h2>Inventory Status</h2>
+                    <button class="primary-btn" style="padding: 8px 16px; font-size: 14px;">+ Add Product</button>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Product Details</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tbl-product-info">
+                                        <img src="807293731173ab33949edd1a7c93fa63.webp.jpeg" alt="Shirt">
+                                        <span>Stylish Cotton Shirt for Men</span>
+                                    </div>
+                                </td>
+                                <td>Apparel</td>
+                                <td>$24.99</td>
+                                <td>145</td>
+                                <td><span class="status-badge success">In Stock</span></td>
+                                <td><button class="icon-btn"><i class="fa-solid fa-pen"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tbl-product-info">
+                                        <img src="Square_Neck_Split_Long_Sleeve_Top_in_Off-White.jpg.webp" alt="Top">
+                                        <span>Square Neck Split Long Sleeve Top</span>
+                                    </div>
+                                </td>
+                                <td>Apparel</td>
+                                <td>$18.50</td>
+                                <td>32</td>
+                                <td><span class="status-badge warning">Low Stock</span></td>
+                                <td><button class="icon-btn"><i class="fa-solid fa-pen"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tbl-product-info">
+                                        <img src="Mesh_Ruffle_Green_Maxi_Dress_Back_View.jpg.webp" alt="Dress">
+                                        <span>Mesh Ruffle Green Maxi Dress</span>
+                                    </div>
+                                </td>
+                                <td>Apparel</td>
+                                <td>$45.00</td>
+                                <td>0</td>
+                                <td><span class="status-badge danger">Out of Stock</span></td>
+                                <td><button class="icon-btn"><i class="fa-solid fa-pen"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tbl-product-info">
+                                        <img src="Halter-Neck_A-Line_Dress_In_Light_Gold.webp.jpeg" alt="Gold Dress">
+                                        <span>Halter-Neck A-Line Dress in Gold</span>
+                                    </div>
+                                </td>
+                                <td>Apparel</td>
+                                <td>$39.99</td>
+                                <td>89</td>
+                                <td><span class="status-badge success">In Stock</span></td>
+                                <td><button class="icon-btn"><i class="fa-solid fa-pen"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
