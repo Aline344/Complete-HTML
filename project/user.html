@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Walmart Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="user-body">
+
+    <!-- Top Navigation -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <a href="index.html">
+                <img src="Walmart_logo_(2008).jpg" alt="Walmart Logo" class="logo">
+            </a>
+        </div>
+
+        <div class="nav-search">
+            <input type="text" placeholder="Search everything at Walmart online and in store">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="nav-actions">
+            <!-- Reorder replaced with "My Account" indicator -->
+            <a href="#" class="nav-icon-link active">
+                <i class="fa-solid fa-user-circle"></i>
+                <div>
+                    <span>Hi, User</span>
+                    <strong>Account</strong>
+                </div>
+            </a>
+            <button class="cart-btn" onclick="window.location.href='index.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-btn-info">
+                    <strong>Cart</strong>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- User Dashboard Layout -->
+    <div class="user-dashboard-wrapper">
+        <div class="user-dashboard-container">
+
+            <!-- Welcome Banner -->
+            <div class="user-welcome-banner">
+                <div class="user-profile-pic">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-info">
+                    <h1>Hi, Example User</h1>
+                    <p>Member since October 2025</p>
+                </div>
+                <button class="secondary-btn logout-header-btn" onclick="window.location.href='login.html'">Sign
+                    Out</button>
+            </div>
+
+            <div class="user-main-content">
+                <!-- Sidebar -->
+                <aside class="user-sidebar">
+                    <ul class="user-menu">
+                        <li class="active"><a href="#"><i class="fa-solid fa-box"></i> Purchase History</a></li>
+                        <li><a href="#"><i class="fa-solid fa-heart"></i> Saved Items</a></li>
+                        <li><a href="#"><i class="fa-solid fa-wallet"></i> Wallet</a></li>
+                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Addresses</a></li>
+                        <li><a href="#"><i class="fa-solid fa-gear"></i> Account Settings</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="user-content-area">
+
+                    <!-- Quick Actions -->
+                    <div class="quick-actions-grid">
+                        <div class="quick-action-card">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h4>Track Order</h4>
+                            <p>View the status of your recent packages</p>
+                        </div>
+                        <div class="quick-action-card">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <h4>Start a Return</h4>
+                            <p>Return or replace items online or in-store</p>
+                        </div>
+                        <div class="quick-action-card">
+                            <i class="fa-solid fa-headset"></i>
+                            <h4>Help & Support</h4>
+                            <p>Contact customer care for assistance</p>
+                        </div>
+                    </div>
+
+                    <!-- Recent Orders -->
+                    <section class="user-section">
+                        <div class="section-header flex-between">
+                            <h2>Recent Orders</h2>
+                            <a href="#" class="view-all-link">View All</a>
+                        </div>
+
+                        <div class="order-list">
+                            <!-- Order Item 1 -->
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-summary">
+                                        <span class="order-date">Arrived Feb 22</span>
+                                        <span class="order-total">Total: $24.99</span>
+                                    </div>
+                                    <button class="order-action-btn">Track Package</button>
+                                </div>
+                                <div class="order-details">
+                                    <img src="807293731173ab33949edd1a7c93fa63.webp.jpeg" alt="Shirt">
+                                    <div class="order-item-info">
+                                        <h4>Stylish Cotton Shirt for Men</h4>
+                                        <p>Qty: 1</p>
+                                    </div>
+                                    <button class="secondary-action-btn">Buy Again</button>
+                                </div>
+                            </div>
+
+                            <!-- Order Item 2 -->
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-summary">
+                                        <span class="order-date">Delivered Jan 15</span>
+                                        <span class="order-total">Total: $45.00</span>
+                                    </div>
+                                    <button class="order-action-btn">Return Item</button>
+                                </div>
+                                <div class="order-details">
+                                    <img src="Mesh_Ruffle_Green_Maxi_Dress_Back_View.jpg.webp" alt="Dress">
+                                    <div class="order-item-info">
+                                        <h4>Mesh Ruffle Green Maxi Dress</h4>
+                                        <p>Qty: 1</p>
+                                    </div>
+                                    <button class="secondary-action-btn">Buy Again</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Saved Items -->
+                    <section class="user-section">
+                        <div class="section-header flex-between">
+                            <h2>Saved for Later</h2>
+                            <a href="#" class="view-all-link">Manage List</a>
+                        </div>
+                        <div class="saved-items-grid">
+                            <div class="saved-card">
+                                <img src="Halter-Neck_A-Line_Dress_In_Light_Gold.webp.jpeg" alt="Gold Dress">
+                                <h5>Halter-Neck A-Line Dress</h5>
+                                <p class="saved-price">$39.99</p>
+                                <button class="add-btn">Add to Cart</button>
+                            </div>
+                            <div class="saved-card">
+                                <img src="Square_Neck_Split_Long_Sleeve_Top_in_Off-White.jpg.webp" alt="White Top">
+                                <h5>Square Neck Split Long Sleeve Top</h5>
+                                <p class="saved-price">$18.50</p>
+                                <button class="add-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
